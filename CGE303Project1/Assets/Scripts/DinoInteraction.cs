@@ -2,14 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjectInteraction : MonoBehaviour
+public class DinoInteraction : MonoBehaviour
 {
     private bool isPlayerNearby = false;
+
 
     // Start is called before the first frame update
     void Start()
     {
-
+       
     }
 
     // Update is called once per frame
@@ -17,10 +18,10 @@ public class ObjectInteraction : MonoBehaviour
     {
         if (isPlayerNearby)
         {
-            displayForagePrompt();
+            displayDinoPrompt();
             if (Input.GetKeyDown(KeyCode.E))
             {
-                Interact(); 
+                Interact();
             }
         }
     }
@@ -42,8 +43,8 @@ public class ObjectInteraction : MonoBehaviour
 
     }
 
-    private void displayForagePrompt()
+    private void displayDinoPrompt()
     {
-        // display items that can be foraged from object
+        // display items needed to tame dino
     }
 }
