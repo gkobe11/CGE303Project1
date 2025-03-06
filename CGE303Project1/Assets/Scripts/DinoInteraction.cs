@@ -5,35 +5,28 @@ using UnityEngine;
 public class DinoInteraction : MonoBehaviour
 {
     private bool isPlayerNearby = false;
+    public GameObject dinoTextBox; // set in inspector
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-       
-    }
 
     // Update is called once per frame
     void Update()
     {
-        if (isPlayerNearby)
+        if (isPlayerNearby && Input.GetKeyDown(KeyCode.E))
         {
-            displayDinoPrompt();
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                Interact();
-            }
+            Interact();
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         isPlayerNearby = true;
+        dinoTextBox.SetActive(true);
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
         isPlayerNearby = false;
+        dinoTextBox.SetActive(false);
     }
 
     private void Interact()
@@ -41,10 +34,5 @@ public class DinoInteraction : MonoBehaviour
         // initiate foraging mini game here
         Debug.Log("Interacted with object"); //can be deleted
 
-    }
-
-    private void displayDinoPrompt()
-    {
-        // display items needed to tame dino
     }
 }

@@ -5,34 +5,28 @@ using UnityEngine;
 public class ObjectInteraction : MonoBehaviour
 {
     private bool isPlayerNearby = false;
+    public GameObject objectTextBox; // set in inspector
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
     void Update()
     {
-        if (isPlayerNearby)
+        if (isPlayerNearby && Input.GetKeyDown(KeyCode.E))
         {
-            displayForagePrompt();
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                Interact(); 
-            }
+            Interact();
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         isPlayerNearby = true;
+        objectTextBox.SetActive(true);
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
         isPlayerNearby = false;
+        objectTextBox.SetActive(false);
     }
 
     private void Interact()
@@ -40,10 +34,5 @@ public class ObjectInteraction : MonoBehaviour
         // initiate foraging mini game here
         Debug.Log("Interacted with object"); //can be deleted
 
-    }
-
-    private void displayForagePrompt()
-    {
-        // display items that can be foraged from object
     }
 }
