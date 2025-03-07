@@ -5,6 +5,7 @@ using UnityEngine;
 public class DinoInteraction : MonoBehaviour
 {
     private bool isPlayerNearby = false;
+    private bool isTamed = false;
     public GameObject dinoTextBox; // set in inspector
 
 
