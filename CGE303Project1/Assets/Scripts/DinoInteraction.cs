@@ -6,6 +6,7 @@ public class DinoInteraction : MonoBehaviour
 {
     private bool isPlayerNearby = false;
     private bool isTamed = false;
+
     public GameObject dinoTextBox; // set in inspector
 
 
@@ -35,5 +36,11 @@ public class DinoInteraction : MonoBehaviour
         // initiate foraging mini game here
         Debug.Log("Interacted with object"); //can be deleted
 
+
+
+
+        // if player successfully tames dino
+        isTamed = true;
+        
     }
 }
