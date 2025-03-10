@@ -7,7 +7,9 @@ public class DinoInteraction : MonoBehaviour
     private bool isPlayerNearby = false;
     private bool isTamed = false;
 
+    public GameObject dino; // set in inspector
     public GameObject dinoTextBox; // set in inspector
+
 
 
     // Update is called once per frame
@@ -41,6 +43,8 @@ public class DinoInteraction : MonoBehaviour
 
         // if player successfully tames dino
         isTamed = true;
-        
+        dino.GetComponent<BoxCollider2D>().enabled = false;
     }
+
+
 }
