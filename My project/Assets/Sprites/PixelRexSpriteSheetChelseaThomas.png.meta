@@ -1,0 +1,457 @@
+fileFormatVersion: 2
+guid: 8ef36e3408c0d37459f04b7be2b4ced7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6133179012475979002
+    second: PixelRexSpriteSheetChelseaThomas_0
+  - first:
+      213: 5092941024802769755
+    second: PixelRexSpriteSheetChelseaThomas_1
+  - first:
+      213: -2567961668741534000
+    second: PixelRexSpriteSheetChelseaThomas_2
+  - first:
+      213: -3773883664916236038
+    second: PixelRexSpriteSheetChelseaThomas_3
+  - first:
+      213: 1114637912043635498
+    second: PixelRexSpriteSheetChelseaThomas_4
+  - first:
+      213: -8414412734587209677
+    second: PixelRexSpriteSheetChelseaThomas_5
+  - first:
+      213: 7345550648345904802
+    second: PixelRexSpriteSheetChelseaThomas_6
+  - first:
+      213: 7495829635248895682
+    second: PixelRexSpriteSheetChelseaThomas_7
+  - first:
+      213: -1731380599048774776
+    second: PixelRexSpriteSheetChelseaThomas_8
+  - first:
+      213: 4099286130713136552
+    second: PixelRexSpriteSheetChelseaThomas_9
+  - first:
+      213: 6587411026693342022
+    second: PixelRexSpriteSheetChelseaThomas_10
+  - first:
+      213: -6959635086530407747
+    second: PixelRexSpriteSheetChelseaThomas_11
+  - first:
+      213: -4336863875033096082
+    second: PixelRexSpriteSheetChelseaThomas_12
+  - first:
+      213: -7845186409566064126
+    second: PixelRexSpriteSheetChelseaThomas_13
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PixelRexSpriteSheetChelseaThomas_0
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 410
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60bfc71ee2292eaa0800000000000000
+      internalID: -6133179012475979002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelRexSpriteSheetChelseaThomas_1
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 411
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5b0265e0e2cda640800000000000000
+      internalID: 5092941024802769755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelRexSpriteSheetChelseaThomas_2
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 411
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0de67d9c774cc5cd0800000000000000
+      internalID: -2567961668741534000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelRexSpriteSheetChelseaThomas_3
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 411
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8b4093dc870abc0800000000000000
+      internalID: -3773883664916236038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelRexSpriteSheetChelseaThomas_4
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 342
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a234b80864df77f00800000000000000
+      internalID: 1114637912043635498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelRexSpriteSheetChelseaThomas_5
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 342
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 338f76903300a3b80800000000000000
+      internalID: -8414412734587209677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelRexSpriteSheetChelseaThomas_6
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 342
+        width: 46
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a64c427563a0f560800000000000000
+      internalID: 7345550648345904802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelRexSpriteSheetChelseaThomas_7
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 342
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c63bd1b659860860800000000000000
+      internalID: 7495829635248895682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelRexSpriteSheetChelseaThomas_8
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 273
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88bd1b6b486e8f7e0800000000000000
+      internalID: -1731380599048774776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelRexSpriteSheetChelseaThomas_9
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 273
+        width: 33
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ad87d5540793e830800000000000000
+      internalID: 4099286130713136552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelRexSpriteSheetChelseaThomas_10
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 273
+        width: 44
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6434c8b5d6f2b6b50800000000000000
+      internalID: 6587411026693342022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelRexSpriteSheetChelseaThomas_11
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 273
+        width: 49
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db2920533c86a6f90800000000000000
+      internalID: -6959635086530407747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelRexSpriteSheetChelseaThomas_12
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 201
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e60ad69884d50d3c0800000000000000
+      internalID: -4336863875033096082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelRexSpriteSheetChelseaThomas_13
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 202
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 202b71da68c402390800000000000000
+      internalID: -7845186409566064126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
