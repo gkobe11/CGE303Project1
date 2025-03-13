@@ -5,7 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/DinosaurTamer.unity
+    guid: 76a24735975e29547b0f2c42fa57c978
+  - enabled: 1
+    path: Assets/Scenes/TamingGame.unity
+    guid: 67febd3f835f8f24d8ba86e8d02f3d9a
   m_configObjects: {}
