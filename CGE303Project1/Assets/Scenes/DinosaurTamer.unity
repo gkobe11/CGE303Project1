@@ -538,8 +538,8 @@ Transform:
   m_Children:
   - {fileID: 1238725385}
   - {fileID: 957268938}
-  - {fileID: 1633506772}
   - {fileID: 1720028911}
+  - {fileID: 1633506772}
   - {fileID: 428148786}
   m_Father: {fileID: 1177852689}
   m_RootOrder: 2
@@ -2364,7 +2364,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anchor: {fileID: 1816981006}
-  self: {fileID: 0}
 --- !u!58 &395590881
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2880,7 +2879,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anchor: {fileID: 957268937}
-  self: {fileID: 428148785}
 --- !u!58 &428148789
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5218,7 +5216,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anchor: {fileID: 1495637569}
-  self: {fileID: 0}
 --- !u!58 &673499247
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -13237,7 +13234,7 @@ GameObject:
   - component: {fileID: 1599984010}
   m_Layer: 0
   m_Name: Rotator
-  m_TagString: Player
+  m_TagString: rotator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13469,7 +13466,7 @@ Transform:
   m_LocalScale: {x: 0.15, y: 0.15, z: 1}
   m_Children: []
   m_Father: {fileID: 97664214}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &1633506773
 CircleCollider2D:
@@ -13551,7 +13548,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anchor: {fileID: 957268937}
-  self: {fileID: 1633506771}
 --- !u!50 &1633506776
 Rigidbody2D:
   serializedVersion: 4
@@ -14215,7 +14211,7 @@ Transform:
   m_LocalScale: {x: 0.15, y: 0.15, z: 1}
   m_Children: []
   m_Father: {fileID: 97664214}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1720028912
 Rigidbody2D:
@@ -14251,7 +14247,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anchor: {fileID: 957268937}
-  self: {fileID: 1720028910}
 --- !u!58 &1720028914
 CircleCollider2D:
   m_ObjectHideFlags: 0

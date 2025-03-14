@@ -23,7 +23,7 @@ public class TamingGame : MonoBehaviour
     void Update()
     {
         transform.Rotate(Vector3.forward * speed * Time.deltaTime);
-        if (triggerZones == 0)
+        if (triggerZones <= 0)
         {
             dinoScript.isTamed = true;
             dinoScript.isTaming = false;

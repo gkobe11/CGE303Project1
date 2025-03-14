@@ -8,7 +8,6 @@ public class TamingTriggerZone : MonoBehaviour
     public GameObject anchor; // set in inspector
     private TamingGame tamingScript;
 
-    public GameObject self; // set in inspector
 
     private void Start()
     {
@@ -22,7 +21,7 @@ public class TamingTriggerZone : MonoBehaviour
             if (isNearby)
             {
                 tamingScript.triggerZones--;
-                Destroy(self);
+                Destroy(gameObject);
             }
             else
             {
@@ -33,11 +32,17 @@ public class TamingTriggerZone : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        isNearby = true;
+        if (collision.gameObject.tag == "rotator")
+        {
+            isNearby = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        isNearby = false;
+        if (collision.gameObject.tag == "rotator")
+        {
+            isNearby = false;
+        }
     }
 }
