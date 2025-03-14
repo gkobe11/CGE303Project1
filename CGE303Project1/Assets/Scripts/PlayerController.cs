@@ -23,6 +23,10 @@ public class PlayerController : MonoBehaviour
     private float horizontalInput;
     private float verticalInput;
 
+    //player audio
+    public AudioClip jumpSound;
+    private AudioSource playerAudio;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +38,8 @@ public class PlayerController : MonoBehaviour
         {
             Debug.LogError("GroundCheck not assigned to player controller");
         }
+
+        playerAudio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -45,6 +51,11 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        {
+            playerAudio.PlayOneShot(jumpSound, 1.0f);
         }
     }
 
