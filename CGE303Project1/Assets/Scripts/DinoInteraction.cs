@@ -49,6 +49,7 @@ public class DinoInteraction : MonoBehaviour
     {
         dinoTextBox.SetActive(false);
         isTaming = true;
+        //check if player has enough items to start taming
         tamingGame.SetActive(true); //start taming mini game
     }
 }

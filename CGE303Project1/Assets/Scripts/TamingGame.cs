@@ -8,7 +8,7 @@ public class TamingGame : MonoBehaviour
     public int triggerZones; //set in inspector
     public int strikes = 3;
 
-    private DinoInteraction dinoScript; //set in inspector
+    private DinoInteraction dinoScript; 
 
     public GameObject tamingGame; //set in inspector
     public GameObject dinoTriggerZone; //set in inspector

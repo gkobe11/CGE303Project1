@@ -8,6 +8,8 @@ public class TamingTriggerZone : MonoBehaviour
     public GameObject anchor; // set in inspector
     private TamingGame tamingScript;
 
+    public GameObject self; // set in inspector
+
     private void Start()
     {
         tamingScript = anchor.GetComponent<TamingGame>();
@@ -15,14 +17,17 @@ public class TamingTriggerZone : MonoBehaviour
 
     private void Update()
     {
-        if (isNearby && Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            tamingScript.triggerZones--;
-            Destroy(gameObject);
-        }
-        else if (!isNearby && Input.GetKeyDown(KeyCode.E))
-        {
-            tamingScript.strikes--;
+            if (isNearby)
+            {
+                tamingScript.triggerZones--;
+                Destroy(self);
+            }
+            else
+            {
+                tamingScript.strikes--;
+            }
         }
     }
 
