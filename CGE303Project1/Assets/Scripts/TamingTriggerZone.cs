@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TamingTriggerZone : MonoBehaviour
 {
-    private bool isNearby = false;
+    public bool isNearby = false;
     public GameObject anchor; // set in inspector
     private TamingGame tamingScript;
 
@@ -16,17 +16,11 @@ public class TamingTriggerZone : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && isNearby)
         {
-            if (isNearby)
-            {
-                tamingScript.triggerZones--;
-                Destroy(gameObject);
-            }
-            else
-            {
-                tamingScript.strikes--;
-            }
+            tamingScript.triggerZones--;
+            tamingScript.strikes++;
+            gameObject.SetActive(false);
         }
     }
 
