@@ -10,7 +10,8 @@ TrueTypeFontImporter:
   includeFontData: 1
   fontNames:
   - Ancient Modern Tales
-  fallbackFontReferences: []
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: c70e32f375b39504aa68d4817dfd3faa, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1
