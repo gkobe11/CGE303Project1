@@ -6,7 +6,8 @@ public class ObjectInteraction : MonoBehaviour
 {
     private bool isPlayerNearby = false;
     public GameObject objectTextBox; // set in inspector
-
+    [SerializeField] Item item;
+    [SerializeField] InventoryManager inventory;
 
     // Update is called once per frame
     void Update()
@@ -14,6 +15,7 @@ public class ObjectInteraction : MonoBehaviour
         if (isPlayerNearby && Input.GetKeyDown(KeyCode.E))
         {
             Interact();
+            inventory.AddItem(item);
         }
     }
 
