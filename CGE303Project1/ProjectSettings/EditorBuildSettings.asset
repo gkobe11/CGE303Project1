@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DinosaurTamer.unity
     guid: 76a24735975e29547b0f2c42fa57c978
-  - enabled: 1
-    path: Assets/Scenes/TamingGame.unity
-    guid: 67febd3f835f8f24d8ba86e8d02f3d9a
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}

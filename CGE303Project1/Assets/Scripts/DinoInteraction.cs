@@ -20,11 +20,10 @@ public class DinoInteraction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isPlayerNearby && Input.GetKeyDown(KeyCode.E) && !isTamed & !isTaming)
-            if (isPlayerNearby && Input.GetKeyDown(KeyCode.E) && !isTamed & !isTaming) //also must check if player has enough resources
-            {
-                Interact();
-            }
+        if (isPlayerNearby && Input.GetKeyDown(KeyCode.E) && !isTamed & !isTaming) //also must check if player has enough resources
+        {
+            Interact();
+        }
 
         if (isTamed)
         {
@@ -54,7 +53,6 @@ public class DinoInteraction : MonoBehaviour
     {
         dinoTextBox.SetActive(false);
         isTaming = true;
-        //check if player has enough items to start taming
         tamingGame.SetActive(true); //start taming mini game
         StartCoroutine(wait());
     }
