@@ -307,6 +307,7 @@ MonoBehaviour:
   objectTextBox: {fileID: 93621391}
   item: {fileID: 11400000, guid: c1a803fbfcb0baf428d65090e049d75d, type: 2}
   inventory: {fileID: 757364163}
+  slider: {fileID: 0}
 --- !u!61 &52635819
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3348,7 +3349,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 429192949}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -316.89532, y: -169.64217, z: 0}
+  m_LocalPosition: {x: -311.84, y: -167.96, z: 0}
   m_LocalScale: {x: 0.72919315, y: 2.4371908, z: 1}
   m_Children: []
   m_Father: {fileID: 319481401}
@@ -3367,8 +3368,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  minPosition: -6.5
-  maxPosition: 8.2
+  minPosition: -5
+  maxPosition: 6
   textbox: {fileID: 383193394}
 --- !u!212 &429192952
 SpriteRenderer:
@@ -7213,7 +7214,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 791659825}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -305.5056, y: -169.59, z: 0}
+  m_LocalPosition: {x: -300.4503, y: -167.90784, z: 0}
   m_LocalScale: {x: 6.197924, y: 1.3041475, z: 1}
   m_Children: []
   m_Father: {fileID: 319481401}
@@ -7762,6 +7763,7 @@ MonoBehaviour:
   objectTextBox: {fileID: 660383156}
   item: {fileID: 11400000, guid: 2632f99d90b3f84429852946b9cac072, type: 2}
   inventory: {fileID: 757364163}
+  slider: {fileID: 0}
 --- !u!61 &872572885
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7981,7 +7983,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 884161041}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -314.85, y: -169.59, z: 0}
+  m_LocalPosition: {x: -309.79468, y: -167.90784, z: 0}
   m_LocalScale: {x: 6.197924, y: 1.3041475, z: 1}
   m_Children: []
   m_Father: {fileID: 319481401}
@@ -9520,6 +9522,7 @@ MonoBehaviour:
   objectTextBox: {fileID: 584112969}
   item: {fileID: 11400000, guid: 9ccf52c445d7215409b8802ffaf0c02e, type: 2}
   inventory: {fileID: 757364163}
+  slider: {fileID: 0}
 --- !u!61 &1025903336
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13207,7 +13210,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1368036548}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -310.1778, y: -169.59, z: 0}
+  m_LocalPosition: {x: -305.12247, y: -167.90784, z: 0}
   m_LocalScale: {x: 3.1464646, y: 1.3041475, z: 1}
   m_Children: []
   m_Father: {fileID: 319481401}
@@ -14206,6 +14209,7 @@ MonoBehaviour:
   objectTextBox: {fileID: 946999430}
   item: {fileID: 11400000, guid: f9f57d9c9dd86b847ace98a1087479b6, type: 2}
   inventory: {fileID: 757364163}
+  slider: {fileID: 0}
 --- !u!61 &1470678465
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16078,6 +16082,7 @@ MonoBehaviour:
   objectTextBox: {fileID: 135674743}
   item: {fileID: 11400000, guid: 9858e0dda23ddb244ad4372d2ee22ea1, type: 2}
   inventory: {fileID: 757364163}
+  slider: {fileID: 0}
 --- !u!61 &1634148662
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17329,6 +17334,7 @@ MonoBehaviour:
   objectTextBox: {fileID: 545413609}
   item: {fileID: 11400000, guid: a2e664a8ae7aada4495da5afc2d85b2b, type: 2}
   inventory: {fileID: 757364163}
+  slider: {fileID: 0}
 --- !u!61 &1771399209
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18625,6 +18631,7 @@ MonoBehaviour:
   objectTextBox: {fileID: 0}
   item: {fileID: 11400000, guid: c1a803fbfcb0baf428d65090e049d75d, type: 2}
   inventory: {fileID: 757364163}
+  slider: {fileID: 0}
 --- !u!1 &1883322954
 GameObject:
   m_ObjectHideFlags: 0
@@ -18673,6 +18680,7 @@ MonoBehaviour:
   objectTextBox: {fileID: 480314341}
   item: {fileID: 11400000, guid: 9e06252afdb6d054a96a6364e8270e77, type: 2}
   inventory: {fileID: 757364163}
+  slider: {fileID: 0}
 --- !u!61 &1883322957
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19234,6 +19242,7 @@ MonoBehaviour:
   objectTextBox: {fileID: 1462561734}
   item: {fileID: 11400000, guid: c5b4b13370d86574982c482eff041f1d, type: 2}
   inventory: {fileID: 757364163}
+  slider: {fileID: 0}
 --- !u!61 &1897639973
 BoxCollider2D:
   m_ObjectHideFlags: 0

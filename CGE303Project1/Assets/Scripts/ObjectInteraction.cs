@@ -9,6 +9,8 @@ public class ObjectInteraction : MonoBehaviour
     [SerializeField] Item item;
     [SerializeField] InventoryManager inventory;
 
+    public GameObject slider;
+
     // Update is called once per frame
     void Update()
     {
@@ -36,6 +38,14 @@ public class ObjectInteraction : MonoBehaviour
         // initiate foraging mini game here
         //Debug.Log("Interacted with object"); //can be deleted
 
-        GetComponent<PowerMeterSlider>();
+        //PowerMeterSlider.SetActive(true);
+
+        if (Input.GetKeyDown(KeyCode.E)) // check for input
+        {
+            slider.SetActive(true); // make the powerSlider visible
+
+            PowerMeterSlider script = slider.GetComponent<PowerMeterSlider>();
+           
+        }
     }
 }
