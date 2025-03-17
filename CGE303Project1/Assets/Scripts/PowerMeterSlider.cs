@@ -7,8 +7,8 @@ using UnityEngine.SceneManagement;
 public class PowerMeterSlider : MonoBehaviour
 {
     public float speed = 4f;
-    public float minPosition = -4f;
-    public float maxPosition = 9f;
+    public float minPosition = -6.5f;
+    public float maxPosition = 8.2f;
     private bool isMoving = true;
     private float currentPosition;
 
@@ -39,23 +39,24 @@ public class PowerMeterSlider : MonoBehaviour
 
         void CheckTargetRegion()
         {
-            // Define target region (example: between -1 and 1)
-            if (currentPosition > -1.5f && currentPosition < 1.5f)
+            // Define target region (example: between -1.5 and 1.5)
+            if (currentPosition > -0.9f && currentPosition < 2.2f)
             {
                 textbox.text = "You win! Press R to Try Again!";
+
             }
             else
             {
                 textbox.text = "You missed! Press R to Try Again!";
             }
-            
-            if (Input.GetKeyDown(KeyCode.R))
+        }
+
+        if (Input.GetKeyDown(KeyCode.R))
             {
                 //reload the current scene
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
         }
-    }
 }
     
 

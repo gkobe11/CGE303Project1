@@ -37,6 +37,5 @@ public class ObjectInteraction : MonoBehaviour
         //Debug.Log("Interacted with object"); //can be deleted
 
         GetComponent<PowerMeterSlider>();
-
     }
 }

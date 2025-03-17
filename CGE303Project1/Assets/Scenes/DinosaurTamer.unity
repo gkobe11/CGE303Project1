@@ -2219,6 +2219,45 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &319481400
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 319481401}
+  m_Layer: 5
+  m_Name: PowerMeter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &319481401
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319481400}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 429192950}
+  - {fileID: 884161043}
+  - {fileID: 791659826}
+  - {fileID: 1368036549}
+  m_Father: {fileID: 894390781}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &328649919
 GameObject:
   m_ObjectHideFlags: 0
@@ -3309,11 +3348,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 429192949}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.33, y: -0.04, z: 0}
-  m_LocalScale: {x: 0.117651194, y: 1.8688, z: 1}
+  m_LocalPosition: {x: -316.89532, y: -169.64217, z: 0}
+  m_LocalScale: {x: 0.72919315, y: 2.4371908, z: 1}
   m_Children: []
-  m_Father: {fileID: 884161043}
-  m_RootOrder: 2
+  m_Father: {fileID: 319481401}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &429192951
 MonoBehaviour:
@@ -3328,8 +3367,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  minPosition: -7
-  maxPosition: 8
+  minPosition: -6.5
+  maxPosition: 8.2
   textbox: {fileID: 383193394}
 --- !u!212 &429192952
 SpriteRenderer:
@@ -3370,7 +3409,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 0.12517405, g: 0, b: 1, a: 1}
   m_FlipX: 0
@@ -7162,11 +7201,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 791659825}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.5076642, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -305.5056, y: -169.59, z: 0}
+  m_LocalScale: {x: 6.197924, y: 1.3041475, z: 1}
   m_Children: []
-  m_Father: {fileID: 884161043}
-  m_RootOrder: 0
+  m_Father: {fileID: 319481401}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &791659827
 SpriteRenderer:
@@ -7865,7 +7904,7 @@ GameObject:
   - component: {fileID: 884161043}
   - component: {fileID: 884161042}
   m_Layer: 0
-  m_Name: PowerMeter
+  m_Name: PowerMeter (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7929,15 +7968,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 884161041}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.85, y: 5.41, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -314.85, y: -169.59, z: 0}
   m_LocalScale: {x: 6.197924, y: 1.3041475, z: 1}
-  m_Children:
-  - {fileID: 791659826}
-  - {fileID: 1368036549}
-  - {fileID: 429192950}
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_Children: []
+  m_Father: {fileID: 319481401}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &888878490
 GameObject:
@@ -13155,11 +13191,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1368036548}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.75383216, y: 0, z: 0}
-  m_LocalScale: {x: 0.50766426, y: 1, z: 1}
+  m_LocalPosition: {x: -310.1778, y: -169.59, z: 0}
+  m_LocalScale: {x: 3.1464646, y: 1.3041475, z: 1}
   m_Children: []
-  m_Father: {fileID: 884161043}
-  m_RootOrder: 1
+  m_Father: {fileID: 319481401}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1368036550
 SpriteRenderer:
