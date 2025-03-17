@@ -6,6 +6,7 @@ public class ObjectInteraction : MonoBehaviour
 {
     private bool isPlayerNearby = false;
     public GameObject objectTextBox; // set in inspector
+    public GameObject tutorial; // set in inspector
     [SerializeField] Item item;
     [SerializeField] InventoryManager inventory;
 
@@ -37,6 +38,7 @@ public class ObjectInteraction : MonoBehaviour
         {
             isPlayerNearby = false;
             objectTextBox.SetActive(false);
+            tutorial.SetActive(false); // make the tutorial invisible
         }
     }
 
@@ -46,9 +48,10 @@ public class ObjectInteraction : MonoBehaviour
         //Debug.Log("Interacted with object"); //can be deleted
 
         //PowerMeterSlider.SetActive(true);
+        tutorial.SetActive(true); // make the tutorial visible
 
         slider.SetActive(true); // make the powerSlider visible
 
-          
+        
     }
 }

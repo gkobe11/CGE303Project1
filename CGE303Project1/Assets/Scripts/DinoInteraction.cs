@@ -13,6 +13,7 @@ public class DinoInteraction : MonoBehaviour
     public GameObject dino; // set in inspector
     public GameObject dinoTextBox; // set in inspector
     public GameObject tamingGame; // set in inspector
+    public GameObject tutorial; // set in inspector
 
     public TMP_Text textBox; // set in inspector
    
@@ -52,11 +53,13 @@ public class DinoInteraction : MonoBehaviour
             {
                 dinoTextBox.SetActive(false);
             }
+            tutorial.SetActive(false); // make the tutorial invisible
         }
     }
 
     private void Interact()
     {
+        tutorial.SetActive(true);
         dinoTextBox.SetActive(false);
         isTaming = true;
         tamingGame.SetActive(true); //start taming mini game
