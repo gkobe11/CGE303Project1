@@ -34,7 +34,8 @@ public class ObjectInteraction : MonoBehaviour
     private void Interact()
     {
         // initiate foraging mini game here
-        Debug.Log("Interacted with object"); //can be deleted
+        //Debug.Log("Interacted with object"); //can be deleted
 
+        GetComponent<PowerMeterSlider>();
     }
 }
