@@ -1153,7 +1153,7 @@ MonoBehaviour:
   slider: {fileID: 1911502236}
   powerSlider: {fileID: 548971342}
   scoreToWin: 2
-  item: {fileID: 11400000, guid: c1a803fbfcb0baf428d65090e049d75d, type: 2}
+  item: {fileID: 11400000, guid: c5b4b13370d86574982c482eff041f1d, type: 2}
   inventory: {fileID: 757364163}
 --- !u!61 &110001121
 BoxCollider2D:
@@ -5311,7 +5311,7 @@ MonoBehaviour:
   slider: {fileID: 759431805}
   powerSlider: {fileID: 1614437326}
   scoreToWin: 2
-  item: {fileID: 11400000, guid: c1a803fbfcb0baf428d65090e049d75d, type: 2}
+  item: {fileID: 11400000, guid: a2e664a8ae7aada4495da5afc2d85b2b, type: 2}
   inventory: {fileID: 757364163}
 --- !u!61 &509724661
 BoxCollider2D:
@@ -6043,7 +6043,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 105.04003, y: 67.09999}
+  m_AnchoredPosition: {x: 127.9, y: 67.09999}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &560548014 stripped
@@ -6630,7 +6630,7 @@ MonoBehaviour:
   slider: {fileID: 2006191010}
   powerSlider: {fileID: 1582759567}
   scoreToWin: 2
-  item: {fileID: 11400000, guid: c1a803fbfcb0baf428d65090e049d75d, type: 2}
+  item: {fileID: 11400000, guid: 9ccf52c445d7215409b8802ffaf0c02e, type: 2}
   inventory: {fileID: 757364163}
 --- !u!61 &645919171
 BoxCollider2D:
@@ -8482,7 +8482,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 22.93187, y: 20.159721}
+  m_AnchoredPosition: {x: 37.9, y: 20.7}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &770715365
@@ -13933,7 +13933,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 111.03675, y: 67.09999}
+  m_AnchoredPosition: {x: 128, y: 66.9}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1162813665
@@ -15869,7 +15869,7 @@ MonoBehaviour:
   slider: {fileID: 1061613215}
   powerSlider: {fileID: 1447077919}
   scoreToWin: 2
-  item: {fileID: 11400000, guid: c1a803fbfcb0baf428d65090e049d75d, type: 2}
+  item: {fileID: 11400000, guid: 9858e0dda23ddb244ad4372d2ee22ea1, type: 2}
   inventory: {fileID: 757364163}
 --- !u!61 &1296441307
 BoxCollider2D:
@@ -16113,7 +16113,7 @@ MonoBehaviour:
   slider: {fileID: 910985222}
   powerSlider: {fileID: 762074272}
   scoreToWin: 2
-  item: {fileID: 11400000, guid: c1a803fbfcb0baf428d65090e049d75d, type: 2}
+  item: {fileID: 11400000, guid: 9e06252afdb6d054a96a6364e8270e77, type: 2}
   inventory: {fileID: 757364163}
 --- !u!61 &1302281653
 BoxCollider2D:
@@ -17459,7 +17459,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 68.84323, y: 54.13624}
+  m_AnchoredPosition: {x: 96, y: 54.3}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1448669572
@@ -19607,7 +19607,7 @@ MonoBehaviour:
   slider: {fileID: 1836003543}
   powerSlider: {fileID: 1160587513}
   scoreToWin: 2
-  item: {fileID: 11400000, guid: c1a803fbfcb0baf428d65090e049d75d, type: 2}
+  item: {fileID: 11400000, guid: f9f57d9c9dd86b847ace98a1087479b6, type: 2}
   inventory: {fileID: 757364163}
 --- !u!61 &1552210940
 BoxCollider2D:
@@ -19887,7 +19887,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 47.55182, y: 20.823624}
+  m_AnchoredPosition: {x: 51.7, y: 21.57}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1595355589
@@ -20244,7 +20244,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 42.122406, y: 19.535698}
+  m_AnchoredPosition: {x: 40.52, y: 20.1}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &1626128828 stripped
@@ -21099,7 +21099,7 @@ MonoBehaviour:
   slider: {fileID: 1114739432}
   powerSlider: {fileID: 2013067179}
   scoreToWin: 2
-  item: {fileID: 11400000, guid: c1a803fbfcb0baf428d65090e049d75d, type: 2}
+  item: {fileID: 11400000, guid: 2632f99d90b3f84429852946b9cac072, type: 2}
   inventory: {fileID: 757364163}
 --- !u!61 &1674986619
 BoxCollider2D:
@@ -26303,7 +26303,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 58.79608, y: 51.041313}
+  m_AnchoredPosition: {x: 88.1, y: 51.2}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2015851937
@@ -28670,7 +28670,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2363206914174438020, guid: a2939e1e582e425499ca299ffa36e120, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 2363206914174438020, guid: a2939e1e582e425499ca299ffa36e120, type: 3}
       propertyPath: m_LocalPosition.y
@@ -28790,6 +28790,10 @@ PrefabInstance:
       propertyPath: textBox
       value: 
       objectReference: {fileID: 529328132}
+    - target: {fileID: 7343297084456172435, guid: f0416a2eb02ba7049888e72d5a469494, type: 3}
+      propertyPath: tutorial
+      value: 
+      objectReference: {fileID: 432863034}
     - target: {fileID: 7343297084456172435, guid: f0416a2eb02ba7049888e72d5a469494, type: 3}
       propertyPath: tamingGame
       value: 
