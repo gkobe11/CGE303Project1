@@ -17,9 +17,7 @@ public class Item: ScriptableObject {
 
     [Header("Both")]
     public Sprite image;
-
 }
-
 
 public enum ItemType {
     Resource

@@ -15,7 +15,7 @@ public class DinoInteraction : MonoBehaviour
     public GameObject tamingGame; // set in inspector
 
     public TMP_Text textBox; // set in inspector
-
+   
 
     // Update is called once per frame
     void Update()
