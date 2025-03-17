@@ -16,21 +16,28 @@ public class ObjectInteraction : MonoBehaviour
     {
         if (isPlayerNearby && Input.GetKeyDown(KeyCode.E))
         {
+            objectTextBox.SetActive(false);
             Interact();
-            inventory.AddItem(item);
+            //inventory.AddItem(item);
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        isPlayerNearby = true;
-        objectTextBox.SetActive(true);
+        if (other.gameObject.tag == "Player")
+        {
+            isPlayerNearby = true;
+            objectTextBox.SetActive(true);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        isPlayerNearby = false;
-        objectTextBox.SetActive(false);
+        if (other.gameObject.tag == "Player")
+        {
+            isPlayerNearby = false;
+            objectTextBox.SetActive(false);
+        }
     }
 
     private void Interact()
@@ -40,12 +47,8 @@ public class ObjectInteraction : MonoBehaviour
 
         //PowerMeterSlider.SetActive(true);
 
-        if (Input.GetKeyDown(KeyCode.E)) // check for input
-        {
-            slider.SetActive(true); // make the powerSlider visible
+        slider.SetActive(true); // make the powerSlider visible
 
-            PowerMeterSlider script = slider.GetComponent<PowerMeterSlider>();
-           
-        }
+          
     }
 }

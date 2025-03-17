@@ -33,19 +33,25 @@ public class DinoInteraction : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        isPlayerNearby = true;
-        if (!isTamed)
+        if (other.gameObject.tag == "Player")
         {
-            dinoTextBox.SetActive(true);
+            isPlayerNearby = true;
+            if (!isTamed)
+            {
+                dinoTextBox.SetActive(true);
+            }
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        isPlayerNearby = false;
-        if (!isTamed)
+        if (other.gameObject.tag == "Player")
         {
-            dinoTextBox.SetActive(false);
+            isPlayerNearby = false;
+            if (!isTamed)
+            {
+                dinoTextBox.SetActive(false);
+            }
         }
     }
 
