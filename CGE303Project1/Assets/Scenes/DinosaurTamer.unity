@@ -2244,18 +2244,18 @@ RectTransform:
   m_GameObject: {fileID: 319481400}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7425, y: 0.7425, z: 0.7425}
   m_Children:
   - {fileID: 429192950}
   - {fileID: 884161043}
   - {fileID: 791659826}
   - {fileID: 1368036549}
-  m_Father: {fileID: 894390781}
-  m_RootOrder: 5
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 227, y: 129.3}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &328649919
@@ -5691,6 +5691,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6502317860299904045, guid: a299e48a4cf1ebb409f45573e3d1d442, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6502317860299904047, guid: a299e48a4cf1ebb409f45573e3d1d442, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -5854,6 +5858,14 @@ PrefabInstance:
     - target: {fileID: 6502317861669332180, guid: a299e48a4cf1ebb409f45573e3d1d442, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6502317861669332180, guid: a299e48a4cf1ebb409f45573e3d1d442, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 6502317861669332180, guid: a299e48a4cf1ebb409f45573e3d1d442, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 6502317861669332181, guid: a299e48a4cf1ebb409f45573e3d1d442, type: 3}
       propertyPath: m_IsActive
@@ -6231,7 +6243,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -280.6, y: -180.5}
+  m_AnchoredPosition: {x: -305, y: -183}
   m_SizeDelta: {x: 80.6269, y: 68.669}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &706420044
@@ -8303,6 +8315,10 @@ PrefabInstance:
     - target: {fileID: 4643597160726901236, guid: db3f2fd1e490f6542ad1f6421e5a7a70, type: 3}
       propertyPath: m_Name
       value: InventoryCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 4643597160726901238, guid: db3f2fd1e490f6542ad1f6421e5a7a70, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4763546947929378956, guid: db3f2fd1e490f6542ad1f6421e5a7a70, type: 3}
       propertyPath: m_Layer
