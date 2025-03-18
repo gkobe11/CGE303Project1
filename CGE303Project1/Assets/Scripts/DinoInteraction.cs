@@ -16,7 +16,13 @@ public class DinoInteraction : MonoBehaviour
     public GameObject tutorial; // set in inspector
 
     public TMP_Text textBox; // set in inspector
-   
+    public TMP_Text scoreTextBox; // set in inspector
+    private ScoreScript scoreScript;
+
+    private void Start()
+    {
+        scoreScript = scoreTextBox.GetComponent<ScoreScript>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -71,6 +77,10 @@ public class DinoInteraction : MonoBehaviour
         while (tamingGame.activeSelf)
         {
             yield return null;
+        }
+        if (isTamed)
+        {
+            scoreScript.score++;
         }
         yield return new WaitForSeconds(5);
         textBox.text = "";
