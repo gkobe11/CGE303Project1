@@ -8421,7 +8421,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -18252,7 +18252,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Move - Arrow Keys\nJump - Space\nInteract - E\n\n             Volume"
+  m_Text: "Move - Arrow Keys\nJump - Space\nInteract - E\n\n       Music Volume"
 --- !u!222 &1473900703
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20767,7 +20767,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1653655904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24060,8 +24060,8 @@ RectTransform:
   m_Father: {fileID: 943588233}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -28648,9 +28648,29 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2363206914174438016, guid: a2939e1e582e425499ca299ffa36e120, type: 3}
+      propertyPath: winSound
+      value: 
+      objectReference: {fileID: 8300000, guid: ad48055b991e495479c1bf72920a05b1, type: 3}
+    - target: {fileID: 2363206914174438016, guid: a2939e1e582e425499ca299ffa36e120, type: 3}
+      propertyPath: failSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 6706e7baa6cb8a24ca672f0d56570f0c, type: 3}
+    - target: {fileID: 2363206914174438016, guid: a2939e1e582e425499ca299ffa36e120, type: 3}
       propertyPath: jumpSound
       value: 
       objectReference: {fileID: 8300000, guid: 248cdf29e697c004daaf0a51455f6c80, type: 3}
+    - target: {fileID: 2363206914174438016, guid: a2939e1e582e425499ca299ffa36e120, type: 3}
+      propertyPath: loseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 6d8e157e25092434eaf882f22dc748a9, type: 3}
+    - target: {fileID: 2363206914174438016, guid: a2939e1e582e425499ca299ffa36e120, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 6706e7baa6cb8a24ca672f0d56570f0c, type: 3}
+    - target: {fileID: 2363206914174438016, guid: a2939e1e582e425499ca299ffa36e120, type: 3}
+      propertyPath: collectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d29544cd975b2b0439d388ea64cc7d34, type: 3}
     - target: {fileID: 2363206914174438017, guid: a2939e1e582e425499ca299ffa36e120, type: 3}
       propertyPath: m_Name
       value: Player

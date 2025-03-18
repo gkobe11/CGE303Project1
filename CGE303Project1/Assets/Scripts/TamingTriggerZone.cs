@@ -8,10 +8,13 @@ public class TamingTriggerZone : MonoBehaviour
     public GameObject anchor; // set in inspector
     private TamingGame tamingScript;
 
+    PlayerController playerController; // reference to playerController script
 
     private void Start()
     {
         tamingScript = anchor.GetComponent<TamingGame>();
+
+        playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>(); // reference to playerController script
     }
 
     private void Update()
@@ -21,7 +24,13 @@ public class TamingTriggerZone : MonoBehaviour
             tamingScript.triggerZones--;
             tamingScript.strikes++;
             gameObject.SetActive(false);
+
+            playerController.PlayCollectSound(); // plays collect sound
         }
+        /* else if (Input.GetKeyDown(KeyCode.E) && !isNearby) // doesn't work properly
+        {
+            playerController.PlayMissSound(); // plays miss sound
+        } */
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

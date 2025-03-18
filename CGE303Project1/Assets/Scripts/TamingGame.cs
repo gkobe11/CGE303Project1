@@ -17,11 +17,15 @@ public class TamingGame : MonoBehaviour
 
     public TMP_Text textBox; //set in inspector
 
+    PlayerController playerController; // reference to playerController script
+
     // Start is called before the first frame update
     void Start()
     {
         dinoScript = dinoTriggerZone.GetComponent<DinoInteraction>();
         startTriggerZones = triggerZones;
+
+        playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>(); // reference to playerController script
     }
 
     // Update is called once per frame
@@ -37,6 +41,7 @@ public class TamingGame : MonoBehaviour
             // take all items from player
             
             textBox.text = "You tamed the dino!";
+            playerController.PlayWinSound(); // plays win sound
 
             triggerZones = startTriggerZones;
             tamingGame.SetActive(false);
@@ -50,6 +55,7 @@ public class TamingGame : MonoBehaviour
             // give player half of items back
 
             textBox.text = "You failed to tame the dino! Better luck next time!";
+            playerController.PlayLoseSound(); // plays lose sound
 
             triggerZones = startTriggerZones;
             tamingGame.SetActive(false);

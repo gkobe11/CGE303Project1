@@ -11,6 +11,8 @@ public class ForagingTriggerZone : MonoBehaviour
     private int score; // current score
     public int scoreToWin; // set in the inspector (the score needed to win)
 
+    PlayerController playerController; // reference to the playerController script
+
     [SerializeField] Item item;
     [SerializeField] InventoryManager inventory;
 
@@ -18,6 +20,8 @@ public class ForagingTriggerZone : MonoBehaviour
     void Start()
     {
         sliderScript = slider.GetComponent<SliderController>(); // setting a reference to the sliderController script to access its variables
+
+        playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>(); // setting a reference to the playerController script to access its variables 
     }
 
     // Update is called once per frame
@@ -27,6 +31,12 @@ public class ForagingTriggerZone : MonoBehaviour
         {
             inventory.AddItem(item);// add the item to the inventory
             score++; // increase the score if the player is in the trigger zone and presses E
+
+            playerController.PlayCollectSound(); // plays collect sound
+        }
+        else if (!inZone && Input.GetKeyDown(KeyCode.E))
+        {
+            playerController.PlayMissSound(); // plays miss sound
         }
 
         if (score >= scoreToWin) // when the player reaches the score needed to win
