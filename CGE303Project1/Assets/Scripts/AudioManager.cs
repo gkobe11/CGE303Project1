@@ -1,37 +1,54 @@
-using System.Collections;
-using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
-    // Reference to Audio Source
-    public AudioSource audioSource;
+    // Initialize audio mixer
+    [SerializeField]
+    private AudioMixer Mixer;
 
-    // Reference to UI Slider
-    public Slider volumeSlider;
+    // Initialize audio source
+    [SerializeField]
+    private AudioSource AudioSource;
 
-    // Start is called before the first frame update
-    void Start()
+    // Initialize volume value text
+    [SerializeField]
+    private TextMeshProUGUI ValueText;
+
+    // Initialize audio mix mode
+    [SerializeField]
+    private AudioMixMode MixMode;
+
+    private void Start()
     {
-        // Find the audio source
-        audioSource = Camera.main.GetComponent<AudioSource>();
-
-        // Set initial volume to 1
-        float savedVolume = PlayerPrefs.GetFloat("Volume", 1f);
-        audioSource.volume = savedVolume;
-        volumeSlider.value = savedVolume;
-
-        // Add a listener to detect slider changes
-        volumeSlider.onValueChanged.AddListener(SetVolume);
+        // Sets default volume to 1 on start
+        Mixer.SetFloat("Volume", Mathf.Log10(PlayerPrefs.GetFloat("Volume", 1) * 20));
     }
 
-    // Function to change the volume
-    public void SetVolume(float volume)
+    public void OnChangeSlider(float Value) // Initialize dynamic float parameter
     {
-        audioSource.volume = volume;
+        // Limits text value to 2 digits past the decimal point
+        ValueText.SetText($"{Value.ToString("N2")}");
 
-        // Save the volume setting
-        PlayerPrefs.SetFloat("Volume", volume);
+        switch (MixMode) // Allow logrithmic mixer values
+        {
+            case AudioMixMode.LogrithmicMixerVolume:
+                Mixer.SetFloat("Volume", Mathf.Log10(Value) * 20);
+                break;
+        }
+
+        // Logrithmic decibel unit equation
+        float a = Mathf.Log10(Value) * 20; 
+
+        // Set and save new volume level
+        PlayerPrefs.SetFloat("Volume", Value);
+        PlayerPrefs.Save();
+    }
+
+    public enum AudioMixMode
+    {
+        // Allow logrithmic mixer case
+        LogrithmicMixerVolume
     }
 }
