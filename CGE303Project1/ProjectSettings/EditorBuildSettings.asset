@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/Start.unity
+    guid: fe87d2032c0c5a645a2b9ff550e0fc95
+  - enabled: 1
     path: Assets/Scenes/DinosaurTamer.unity
     guid: 76a24735975e29547b0f2c42fa57c978
   - enabled: 0
