@@ -2816,8 +2816,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 87.099976, y: 95}
-  m_SizeDelta: {x: 30, y: 30}
+  m_AnchoredPosition: {x: 70.76594, y: 95}
+  m_SizeDelta: {x: 62.668, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &282869310
 MonoBehaviour:
@@ -15154,8 +15154,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.958786, y: 0}
+  m_SizeDelta: {x: -1.9176941, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1217841026
 MonoBehaviour:
@@ -15190,7 +15190,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: +
+  m_Text: Settings
 --- !u!222 &1217841027
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16675,7 +16675,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -14.899986, y: -43.6}
+  m_AnchoredPosition: {x: -14.7, y: -49.983}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1297381563
@@ -19400,7 +19400,7 @@ GameObject:
   - component: {fileID: 1473900703}
   - component: {fileID: 1473900702}
   m_Layer: 5
-  m_Name: Label
+  m_Name: SettingsText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19422,7 +19422,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.52003, y: 5.2085}
+  m_AnchoredPosition: {x: -0.52003, y: 11.5}
   m_SizeDelta: {x: 161.04, y: 94.817}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1473900702
@@ -19458,7 +19458,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Move - Arrow Keys\nJump - Space\nInteract - E\n\n       Music Volume"
+  m_Text: "Controls:\nA - Move Left\nD - Move Right\nE - Interact\n\n       Music
+    Volume"
 --- !u!222 &1473900703
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21859,8 +21860,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.47031483}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 80.3, y: -41.59999}
-  m_SizeDelta: {x: 15.0138, y: 10.451}
+  m_AnchoredPosition: {x: 85.6752, y: -47.704}
+  m_SizeDelta: {x: 25.7641, y: 10.451}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1643777936
 GameObject:
@@ -22037,8 +22038,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -7.9000015, y: 42.626335}
-  m_SizeDelta: {x: 0, y: -85.2527}
+  m_AnchoredPosition: {x: -7.9000015, y: 33.239685}
+  m_SizeDelta: {x: -0.000061035, y: -66.4794}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1656970635
 GameObject:
@@ -26127,7 +26128,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 95, y: 52.374}
+  m_AnchoredPosition: {x: 95, y: 61.76}
   m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1898936484
