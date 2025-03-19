@@ -7,6 +7,7 @@ public class ObjectInteraction : MonoBehaviour
     private bool isPlayerNearby = false;
     public GameObject objectTextBox; // set in inspector
     public GameObject tutorial; // set in inspector
+    public GameObject expiredTutorial; // set in inspector
     [SerializeField] Item item;
     [SerializeField] InventoryManager inventory;
 
@@ -52,6 +53,6 @@ public class ObjectInteraction : MonoBehaviour
 
         slider.SetActive(true); // make the powerSlider visible
 
-        
+        expiredTutorial.SetActive(false); // make the previous tutorial invisible
     }
 }

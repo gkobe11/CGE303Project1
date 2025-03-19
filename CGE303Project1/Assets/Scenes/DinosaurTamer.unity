@@ -507,6 +507,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectTextBox: {fileID: 93621391}
   tutorial: {fileID: 1316844530}
+  expiredTutorial: {fileID: 2034985982}
   item: {fileID: 11400000, guid: c1a803fbfcb0baf428d65090e049d75d, type: 2}
   inventory: {fileID: 757364163}
   slider: {fileID: 319481400}
@@ -9969,6 +9970,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectTextBox: {fileID: 660383156}
   tutorial: {fileID: 1316844530}
+  expiredTutorial: {fileID: 0}
   item: {fileID: 11400000, guid: 2632f99d90b3f84429852946b9cac072, type: 2}
   inventory: {fileID: 757364163}
   slider: {fileID: 2013067179}
@@ -12335,6 +12337,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectTextBox: {fileID: 584112969}
   tutorial: {fileID: 1316844530}
+  expiredTutorial: {fileID: 0}
   item: {fileID: 11400000, guid: 9ccf52c445d7215409b8802ffaf0c02e, type: 2}
   inventory: {fileID: 757364163}
   slider: {fileID: 1582759567}
@@ -19134,6 +19137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectTextBox: {fileID: 946999430}
   tutorial: {fileID: 1316844530}
+  expiredTutorial: {fileID: 0}
   item: {fileID: 11400000, guid: f9f57d9c9dd86b847ace98a1087479b6, type: 2}
   inventory: {fileID: 757364163}
   slider: {fileID: 1160587513}
@@ -21643,6 +21647,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectTextBox: {fileID: 135674743}
   tutorial: {fileID: 1316844530}
+  expiredTutorial: {fileID: 0}
   item: {fileID: 11400000, guid: 9858e0dda23ddb244ad4372d2ee22ea1, type: 2}
   inventory: {fileID: 757364163}
   slider: {fileID: 1447077919}
@@ -23692,6 +23697,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectTextBox: {fileID: 545413609}
   tutorial: {fileID: 1316844530}
+  expiredTutorial: {fileID: 2034985982}
   item: {fileID: 11400000, guid: a2e664a8ae7aada4495da5afc2d85b2b, type: 2}
   inventory: {fileID: 757364163}
   slider: {fileID: 1614437326}
@@ -25307,6 +25313,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectTextBox: {fileID: 0}
   tutorial: {fileID: 0}
+  expiredTutorial: {fileID: 0}
   item: {fileID: 11400000, guid: c1a803fbfcb0baf428d65090e049d75d, type: 2}
   inventory: {fileID: 757364163}
   slider: {fileID: 0}
@@ -25357,6 +25364,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectTextBox: {fileID: 480314341}
   tutorial: {fileID: 1316844530}
+  expiredTutorial: {fileID: 0}
   item: {fileID: 11400000, guid: 9e06252afdb6d054a96a6364e8270e77, type: 2}
   inventory: {fileID: 757364163}
   slider: {fileID: 762074272}
@@ -26002,6 +26010,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectTextBox: {fileID: 1462561734}
   tutorial: {fileID: 1316844530}
+  expiredTutorial: {fileID: 0}
   item: {fileID: 11400000, guid: c5b4b13370d86574982c482eff041f1d, type: 2}
   inventory: {fileID: 757364163}
   slider: {fileID: 548971342}
