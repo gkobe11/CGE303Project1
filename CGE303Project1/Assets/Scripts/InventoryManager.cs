@@ -23,6 +23,10 @@ public class InventoryManager : MonoBehaviour
                 itemInSlot.RefreshCount();
                 return true;
             }
+
+            if (Input.GetKeyDown(KeyCode.F)) {
+            Destroy(itemInSlot);
+        }
         }
 
         for (int i = 0; i < inventorySlots.Length; i++)
@@ -44,6 +48,4 @@ public class InventoryManager : MonoBehaviour
         DraggableItem inventoryItem = newItemGo.GetComponent<DraggableItem>();
         inventoryItem.InitializeItem(item);
     }
-
-    
 }

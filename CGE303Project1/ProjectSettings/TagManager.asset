@@ -45,3 +45,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: underground
+    uniqueID: 409925575
+    locked: 0
+  - name: topground
+    uniqueID: 1221851967
+    locked: 0
+  - name: trees
+    uniqueID: 2391090757
+    locked: 0
+  - name: New Layer
+    uniqueID: 1399829301
+    locked: 0
+  - name: dinos
+    uniqueID: 239699419
+    locked: 0

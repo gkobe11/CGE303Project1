@@ -29039,6 +29039,18 @@ PrefabInstance:
       propertyPath: scoreTextBox
       value: 
       objectReference: {fileID: 313425206}
+    - target: {fileID: 5610568694326248778, guid: 47411c4411448e64cbb1215eddf5b939, type: 3}
+      propertyPath: inventoryManager
+      value: 
+      objectReference: {fileID: 757364163}
+    - target: {fileID: 5610568694326248781, guid: 47411c4411448e64cbb1215eddf5b939, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -0.5874435
+      objectReference: {fileID: 0}
+    - target: {fileID: 5610568694326248781, guid: 47411c4411448e64cbb1215eddf5b939, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.04308
+      objectReference: {fileID: 0}
     - target: {fileID: 5610568694684750862, guid: 47411c4411448e64cbb1215eddf5b939, type: 3}
       propertyPath: m_Name
       value: dino1
