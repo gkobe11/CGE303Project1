@@ -6,12 +6,20 @@ public class ObjectInteraction : MonoBehaviour
 {
     private bool isPlayerNearby = false;
     public GameObject objectTextBox; // set in inspector
-    public GameObject tutorial; // set in inspector
-    public GameObject expiredTutorial; // set in inspector
+    public GameObject tutorialManager; // set in inspector
+    private TutorialManager tutorial;
+
+
     [SerializeField] Item item;
     [SerializeField] InventoryManager inventory;
 
     public GameObject slider;
+
+
+    void Start()
+    {
+        tutorial = tutorialManager.GetComponent<TutorialManager>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -39,20 +47,13 @@ public class ObjectInteraction : MonoBehaviour
         {
             isPlayerNearby = false;
             objectTextBox.SetActive(false);
-            tutorial.SetActive(false); // make the tutorial invisible
         }
     }
 
     private void Interact()
     {
-        // initiate foraging mini game here
-        //Debug.Log("Interacted with object"); //can be deleted
-
-        //PowerMeterSlider.SetActive(true);
-        tutorial.SetActive(true); // make the tutorial visible
+        tutorial.firstForage = true;
 
         slider.SetActive(true); // make the powerSlider visible
-
-        expiredTutorial.SetActive(false); // make the previous tutorial invisible
     }
 }
