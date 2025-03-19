@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ForagingTriggerZone : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class ForagingTriggerZone : MonoBehaviour
     private bool inZone = false; //true if in the trigger zone
     private int score; // current score
     public int scoreToWin; // set in the inspector (the score needed to win)
+    public int strikes = 3;
+
+    public TMP_Text StrikesTextBox; // set in the inspector (the text box to display the score)
 
     PlayerController playerController; // reference to the playerController script
 
@@ -27,6 +31,7 @@ public class ForagingTriggerZone : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        StrikesTextBox.text = "Strikes: " + strikes; // display the score in the text box
         if (inZone && Input.GetKeyDown(KeyCode.E))
         {
             inventory.AddItem(item);// add the item to the inventory
@@ -36,12 +41,20 @@ public class ForagingTriggerZone : MonoBehaviour
         }
         else if (!inZone && Input.GetKeyDown(KeyCode.E))
         {
+            strikes--; // decrease the strike if the player is not in the trigger zone and presses E
             playerController.PlayMissSound(); // plays miss sound
         }
 
         if (score >= scoreToWin) // when the player reaches the score needed to win
         {
             score = 0; // reset the score
+            strikes = 3; // reset the strikes
+            powerSlider.SetActive(false); // hide the powerSlider game
+        }
+
+        if (strikes <= 0) // when the player runs out of strikes
+        {
+            strikes = 3; // reset the strikes
             powerSlider.SetActive(false); // hide the powerSlider game
         }
     }
