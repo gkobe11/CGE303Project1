@@ -805,6 +805,10 @@ MonoBehaviour:
   tamingGame: {fileID: 1220594481}
   dinoTriggerZone: {fileID: 373068422}
   textBox: {fileID: 529328132}
+  item1: {fileID: 11400000, guid: 9e06252afdb6d054a96a6364e8270e77, type: 2}
+  item2: {fileID: 11400000, guid: 9858e0dda23ddb244ad4372d2ee22ea1, type: 2}
+  item3: {fileID: 11400000, guid: 2632f99d90b3f84429852946b9cac072, type: 2}
+  inventory: {fileID: 757364163}
 --- !u!212 &84000831
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3493,6 +3497,10 @@ MonoBehaviour:
   tamingGame: {fileID: 1457269884}
   dinoTriggerZone: {fileID: 1226493040}
   textBox: {fileID: 2120576183}
+  item1: {fileID: 11400000, guid: 9ccf52c445d7215409b8802ffaf0c02e, type: 2}
+  item2: {fileID: 11400000, guid: f9f57d9c9dd86b847ace98a1087479b6, type: 2}
+  item3: {fileID: 11400000, guid: c5b4b13370d86574982c482eff041f1d, type: 2}
+  inventory: {fileID: 757364163}
 --- !u!212 &338780929
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11093,6 +11101,10 @@ MonoBehaviour:
   tamingGame: {fileID: 97664213}
   dinoTriggerZone: {fileID: 343911122}
   textBox: {fileID: 1431564376}
+  item1: {fileID: 11400000, guid: a2e664a8ae7aada4495da5afc2d85b2b, type: 2}
+  item2: {fileID: 11400000, guid: c1a803fbfcb0baf428d65090e049d75d, type: 2}
+  item3: {fileID: 0}
+  inventory: {fileID: 757364163}
 --- !u!212 &957268940
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28865,6 +28877,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2125246815}
     m_Modifications:
+    - target: {fileID: 1160210455134220436, guid: 52b9a2b337766ec45884166dd891da53, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1160210456512741349, guid: 52b9a2b337766ec45884166dd891da53, type: 3}
+      propertyPath: item1
+      value: 
+      objectReference: {fileID: 11400000, guid: 9ccf52c445d7215409b8802ffaf0c02e, type: 2}
+    - target: {fileID: 1160210456512741349, guid: 52b9a2b337766ec45884166dd891da53, type: 3}
+      propertyPath: item2
+      value: 
+      objectReference: {fileID: 11400000, guid: f9f57d9c9dd86b847ace98a1087479b6, type: 2}
+    - target: {fileID: 1160210456512741349, guid: 52b9a2b337766ec45884166dd891da53, type: 3}
+      propertyPath: item3
+      value: 
+      objectReference: {fileID: 11400000, guid: c5b4b13370d86574982c482eff041f1d, type: 2}
     - target: {fileID: 1160210456512741349, guid: 52b9a2b337766ec45884166dd891da53, type: 3}
       propertyPath: textBox
       value: 
@@ -28873,6 +28901,14 @@ PrefabInstance:
       propertyPath: tutorial
       value: 
       objectReference: {fileID: 432863034}
+    - target: {fileID: 1160210456512741349, guid: 52b9a2b337766ec45884166dd891da53, type: 3}
+      propertyPath: inventory
+      value: 
+      objectReference: {fileID: 757364163}
+    - target: {fileID: 1160210456512741349, guid: 52b9a2b337766ec45884166dd891da53, type: 3}
+      propertyPath: itemCount
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1160210456512741349, guid: 52b9a2b337766ec45884166dd891da53, type: 3}
       propertyPath: tamingGame
       value: 
@@ -29023,6 +29059,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2125246815}
     m_Modifications:
+    - target: {fileID: 5610568693528334518, guid: 47411c4411448e64cbb1215eddf5b939, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5610568694326248778, guid: 47411c4411448e64cbb1215eddf5b939, type: 3}
+      propertyPath: item1
+      value: 
+      objectReference: {fileID: 11400000, guid: a2e664a8ae7aada4495da5afc2d85b2b, type: 2}
+    - target: {fileID: 5610568694326248778, guid: 47411c4411448e64cbb1215eddf5b939, type: 3}
+      propertyPath: item2
+      value: 
+      objectReference: {fileID: 11400000, guid: c1a803fbfcb0baf428d65090e049d75d, type: 2}
     - target: {fileID: 5610568694326248778, guid: 47411c4411448e64cbb1215eddf5b939, type: 3}
       propertyPath: textBox
       value: 
@@ -29031,6 +29079,14 @@ PrefabInstance:
       propertyPath: tutorial
       value: 
       objectReference: {fileID: 432863034}
+    - target: {fileID: 5610568694326248778, guid: 47411c4411448e64cbb1215eddf5b939, type: 3}
+      propertyPath: inventory
+      value: 
+      objectReference: {fileID: 757364163}
+    - target: {fileID: 5610568694326248778, guid: 47411c4411448e64cbb1215eddf5b939, type: 3}
+      propertyPath: itemCount
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5610568694326248778, guid: 47411c4411448e64cbb1215eddf5b939, type: 3}
       propertyPath: tamingGame
       value: 
@@ -29108,6 +29164,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2125246815}
     m_Modifications:
+    - target: {fileID: 7343297084220091576, guid: f0416a2eb02ba7049888e72d5a469494, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7343297084456172435, guid: f0416a2eb02ba7049888e72d5a469494, type: 3}
+      propertyPath: item1
+      value: 
+      objectReference: {fileID: 11400000, guid: 9e06252afdb6d054a96a6364e8270e77, type: 2}
+    - target: {fileID: 7343297084456172435, guid: f0416a2eb02ba7049888e72d5a469494, type: 3}
+      propertyPath: item2
+      value: 
+      objectReference: {fileID: 11400000, guid: 9858e0dda23ddb244ad4372d2ee22ea1, type: 2}
+    - target: {fileID: 7343297084456172435, guid: f0416a2eb02ba7049888e72d5a469494, type: 3}
+      propertyPath: item3
+      value: 
+      objectReference: {fileID: 11400000, guid: 2632f99d90b3f84429852946b9cac072, type: 2}
     - target: {fileID: 7343297084456172435, guid: f0416a2eb02ba7049888e72d5a469494, type: 3}
       propertyPath: textBox
       value: 
@@ -29116,6 +29188,14 @@ PrefabInstance:
       propertyPath: tutorial
       value: 
       objectReference: {fileID: 432863034}
+    - target: {fileID: 7343297084456172435, guid: f0416a2eb02ba7049888e72d5a469494, type: 3}
+      propertyPath: inventory
+      value: 
+      objectReference: {fileID: 757364163}
+    - target: {fileID: 7343297084456172435, guid: f0416a2eb02ba7049888e72d5a469494, type: 3}
+      propertyPath: itemCount
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 7343297084456172435, guid: f0416a2eb02ba7049888e72d5a469494, type: 3}
       propertyPath: tamingGame
       value: 

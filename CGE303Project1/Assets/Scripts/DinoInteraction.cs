@@ -19,6 +19,12 @@ public class DinoInteraction : MonoBehaviour
     public TMP_Text scoreTextBox; // set in inspector
     private ScoreScript scoreScript;
 
+    [SerializeField] Item item1; // set in inspector
+    [SerializeField] Item item2; // set in inspector
+    [SerializeField] Item item3; // set in inspector
+    [SerializeField] InventoryManager inventory;
+    public int itemCount;
+
     private void Start()
     {
         scoreScript = scoreTextBox.GetComponent<ScoreScript>();
@@ -27,7 +33,8 @@ public class DinoInteraction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isPlayerNearby && Input.GetKeyDown(KeyCode.E) && !isTamed & !isTaming) //also must check if player has enough resources
+        if (isPlayerNearby && Input.GetKeyDown(KeyCode.E) && !isTamed & !isTaming
+            && findItems(item1) && findItems(item2) && findItems(item3)) //also must check if player has enough resources
         {
             Interact();
         }
@@ -84,5 +91,23 @@ public class DinoInteraction : MonoBehaviour
         }
         yield return new WaitForSeconds(5);
         textBox.text = "";
+    }
+
+    bool findItems(Item item)
+    {
+        if (item != null)
+        {
+            int numItems = inventory.findNumItems(item);
+            if (numItems >= itemCount)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        return true;
     }
 }
