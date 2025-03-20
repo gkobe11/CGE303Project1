@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 
@@ -14,6 +15,7 @@ public class DinoInteraction : MonoBehaviour
     public GameObject dinoTextBox; // set in inspector
     public GameObject tamingGame; // set in inspector
     public GameObject tutorialManager; // set in inspector
+    public GameObject image;
     private TutorialManager tutorial;
 
 
@@ -49,6 +51,7 @@ public class DinoInteraction : MonoBehaviour
         if (isTamed)
         {
             dino.GetComponent<BoxCollider2D>().enabled = false; //allow player to walk through dino
+            image.SetActive(true);
         }
     }
 
