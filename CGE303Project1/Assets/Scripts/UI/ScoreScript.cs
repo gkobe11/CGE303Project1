@@ -20,7 +20,7 @@ public class ScoreScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        scoreTextBox.text = "Score: " + score + "/3";
+        scoreTextBox.text = "Tamed: " + score + "/3";
         if (score >= maxScore)
         {
             winTextBox.text = "You have tamed all the dinosaurs! Press R to play again!";
