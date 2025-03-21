@@ -31,6 +31,12 @@ public class PlayerController : MonoBehaviour
     public AudioClip loseSound;
     private AudioSource playerAudio;
 
+    //animation
+    public Animator animator;
+
+    private bool oneSecondDelay = false;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -49,12 +55,26 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         //get horizontal input
         horizontalInput = Input.GetAxis("Horizontal");
+
+        if (isGrounded && oneSecondDelay)
+        {
+            Debug.Log("ground");
+            animator.SetBool("IsJumping", false);
+        }
+
         //check for jump input
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+
+            //jumping animation
+            animator.SetBool("IsJumping", true);
+
+            //trigger one second delay
+            StartCoroutine(ToggleBooleanAfterDelay());
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
@@ -62,6 +82,18 @@ public class PlayerController : MonoBehaviour
             playerAudio.PlayOneShot(jumpSound, 1.0f);
         }
     }
+
+
+// Coroutine to handle the delay
+private IEnumerator ToggleBooleanAfterDelay()
+{
+        oneSecondDelay = false;
+
+        yield return new WaitForSeconds(0.5f); // Wait for 1 second
+    oneSecondDelay = true; // Toggle the boolean
+    Debug.Log("Boolean toggled: " + oneSecondDelay);
+}
+
 
     void FixedUpdate()
     {
@@ -71,7 +103,8 @@ public class PlayerController : MonoBehaviour
         //check if player is grounded
         isGrounded = Physics2D.OverlapCircle(GroundCheck.position, groundCheckRadius, groundLayer);
 
-        //add animation here 
+        //walking animation
+        animator.SetFloat("Speed", Mathf.Abs(horizontalInput));
 
         //ensure player is facing in movement direction
         if (horizontalInput > 0)
@@ -83,6 +116,8 @@ public class PlayerController : MonoBehaviour
             transform.localScale = new Vector3(-1f, 1f, 1f); //facing left
         }
     }
+
+
 
     public void PlayCollectSound()
     {
