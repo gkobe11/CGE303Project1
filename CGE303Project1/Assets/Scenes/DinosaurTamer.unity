@@ -12542,7 +12542,7 @@ MonoBehaviour:
   - Once you have collected the proper food you can try to tame the dinosaur.
   - To start, use the A and D keys on your keyboard to move left and right.
   - Use the E key to interact with plants and dinosaurs.
-  typingSpeed: 0.02
+  typingSpeed: 0.01
   continueButton: {fileID: 1215609177}
   dialogPanel: {fileID: 372771801}
 --- !u!1 &952816239
@@ -12811,7 +12811,7 @@ MonoBehaviour:
   textbox: {fileID: 1841667554}
   sentences:
   - To collect resources, press E when the slider is inside the green zone.
-  typingSpeed: 0.02
+  typingSpeed: 0.01
   continueButton: {fileID: 285360689}
   dialogPanel: {fileID: 44797361}
 --- !u!1 &964543871
@@ -16253,7 +16253,7 @@ MonoBehaviour:
   sentences:
   - To tame the dinosaur, press E when the slider is inside a green bubble. Pop all
     of the bubbles to tame the dino.
-  typingSpeed: 0.02
+  typingSpeed: 0.01
   continueButton: {fileID: 1903215227}
   dialogPanel: {fileID: 515519394}
 --- !u!1 &1199033698
@@ -23582,7 +23582,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "                     Credits\n\nLead Developer \u2015 Gavin Kobe\nDevelopers   
+  m_text: "                     Credits\n\nDevelopers \u2015 Gavin Kobe\n                    
     \u2015 Mimi Davis\n                      \u2015 Maile Fidale\n                     
     \u2015 Panos Burbulis\n                      \u2015 Charlie Brennan\n\nMusic
     by Rebexcca\n\"Island Theme\" (2025)\n"
