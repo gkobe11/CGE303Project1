@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 
@@ -13,7 +14,10 @@ public class DinoInteraction : MonoBehaviour
     public GameObject dino; // set in inspector
     public GameObject dinoTextBox; // set in inspector
     public GameObject tamingGame; // set in inspector
-    public GameObject tutorial; // set in inspector
+    public GameObject tutorialManager; // set in inspector
+    public GameObject image;
+    private TutorialManager tutorial;
+
 
     public TMP_Text textBox; // set in inspector
     public TMP_Text scoreTextBox; // set in inspector
@@ -28,20 +32,26 @@ public class DinoInteraction : MonoBehaviour
     private void Start()
     {
         scoreScript = scoreTextBox.GetComponent<ScoreScript>();
+        tutorial = tutorialManager.GetComponent<TutorialManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (isPlayerNearby && Input.GetKeyDown(KeyCode.E) && !isTamed & !isTaming
-            && findItems(item1) && findItems(item2) && findItems(item3)) //also must check if player has enough resources
+        if (isPlayerNearby && Input.GetKeyDown(KeyCode.E) && !isTamed & !isTaming && findItems(item1) && findItems(item2) && findItems(item3)) //also must check if player has enough resources
         {
             Interact();
+        }
+        else if (isPlayerNearby && Input.GetKeyDown(KeyCode.E) && !isTamed & !isTaming)
+        {
+            textBox.text = "You do not have enough resources to tame the dino!";
+            StartCoroutine(wait());
         }
 
         if (isTamed)
         {
             dino.GetComponent<BoxCollider2D>().enabled = false; //allow player to walk through dino
+            image.SetActive(true);
         }
     }
 
@@ -66,13 +76,12 @@ public class DinoInteraction : MonoBehaviour
             {
                 dinoTextBox.SetActive(false);
             }
-            tutorial.SetActive(false); // make the tutorial invisible
         }
     }
 
     private void Interact()
     {
-        tutorial.SetActive(true);
+        tutorial.firstTame = true;
         dinoTextBox.SetActive(false);
         isTaming = true;
         tamingGame.SetActive(true); //start taming mini game
