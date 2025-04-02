@@ -25,12 +25,12 @@ public class TamingTriggerZone : MonoBehaviour
             tamingScript.strikes++;
             gameObject.SetActive(false);
 
-            playerController.PlayOneShot(CollectSound); // plays collect sound
+            playerController.PlayCollectSound(); // plays collect sound
         }
-         else if (Input.GetKeyDown(KeyCode.E) && !isNearby)
-         {
-            playerController.PlayOneShot(MissSound); // plays miss sound (might work)
-         }
+        /* else if (Input.GetKeyDown(KeyCode.E) && !isNearby) // doesn't work properly
+        {
+            playerController.PlayMissSound(); // plays miss sound
+        } */
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
