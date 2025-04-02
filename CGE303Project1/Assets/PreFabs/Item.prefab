@@ -135,7 +135,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6951124979521236693, guid: 7dbef3bc9cdb86148b000ce4b7841f1f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 17.4483
+      value: 23.368
       objectReference: {fileID: 0}
     - target: {fileID: 6951124979521236693, guid: 7dbef3bc9cdb86148b000ce4b7841f1f, type: 3}
       propertyPath: m_SizeDelta.y
@@ -171,11 +171,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6951124979521236693, guid: 7dbef3bc9cdb86148b000ce4b7841f1f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 9.14
+      value: 8.39
       objectReference: {fileID: 0}
     - target: {fileID: 6951124979521236693, guid: 7dbef3bc9cdb86148b000ce4b7841f1f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -97.1
+      value: -83.5
       objectReference: {fileID: 0}
     - target: {fileID: 6951124979521236693, guid: 7dbef3bc9cdb86148b000ce4b7841f1f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -190,10 +190,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8253015503484474077, guid: 7dbef3bc9cdb86148b000ce4b7841f1f, type: 3}
-      propertyPath: m_Text
-      value: '1
-
-'
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253015503484474077, guid: 7dbef3bc9cdb86148b000ce4b7841f1f, type: 3}
+      propertyPath: m_Color.g
+      value: 0.34117648
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253015503484474077, guid: 7dbef3bc9cdb86148b000ce4b7841f1f, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253015503484474077, guid: 7dbef3bc9cdb86148b000ce4b7841f1f, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253015503484474077, guid: 7dbef3bc9cdb86148b000ce4b7841f1f, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7dbef3bc9cdb86148b000ce4b7841f1f, type: 3}
