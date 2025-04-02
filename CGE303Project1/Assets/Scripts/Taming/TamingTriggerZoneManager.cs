@@ -35,12 +35,17 @@ public class TamingTriggerZoneManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CheckZones();
+        /*CheckZones();
         if (Input.GetKeyDown(KeyCode.E) && !isNearbyAny)
         {
             tamingScript.strikes--;
-        }
+        }*/
         
+        if(Input.GetKeyDown(KeyCode.E))
+        {
+            tamingScript.strikes--;
+        }
+
         //reset game
         if (tamingScript.strikes <= 0)
         {
@@ -51,7 +56,7 @@ public class TamingTriggerZoneManager : MonoBehaviour
             z5.SetActive(true);
         }
     }
-
+    /*
     private void CheckZones()
     {
         if (zone1.isNearby == false && zone2.isNearby == false && zone3.isNearby == false && zone4.isNearby == false && zone5.isNearby == false)
@@ -62,5 +67,5 @@ public class TamingTriggerZoneManager : MonoBehaviour
         {
             isNearbyAny = true;
         }
-    }
+    }*/
 }
