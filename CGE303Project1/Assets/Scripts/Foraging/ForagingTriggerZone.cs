@@ -37,12 +37,12 @@ public class ForagingTriggerZone : MonoBehaviour
             inventory.AddItem(item);// add the item to the inventory
             score++; // increase the score if the player is in the trigger zone and presses E
 
-            playerController.PlayCollectSound(); // plays collect sound
+            playerController.PlayOneShot(CollectSound); // plays collect sound
         }
         else if (!inZone && Input.GetKeyDown(KeyCode.E))
         {
             strikes--; // decrease the strike if the player is not in the trigger zone and presses E
-            playerController.PlayMissSound(); // plays miss sound
+            playerController.PlayOneShot(MissSound); // plays miss sound
         }
 
         if (score >= scoreToWin) // when the player reaches the score needed to win
