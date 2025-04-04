@@ -10,30 +10,47 @@ public class DialogManager : MonoBehaviour
     private int index;
     public float typingSpeed;
 
-    public GameObject continueButton;
     public GameObject dialogPanel;
+    public GameObject continueText;
 
+    private bool isTyping = false;
+
+
+
+    void Update()
+    {
+        if (!isTyping)
+        {
+            continueText.SetActive(true);
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                NextSentence();
+            }
+        }
+    }
 
     void OnEnable()
     {
         StartCoroutine(Type());
-        continueButton.SetActive(false);
+        isTyping = false;
     }
 
     IEnumerator Type()
     {
+        isTyping = true;
+        continueText.SetActive(false);
         textbox.text = "";
         foreach (char letter in sentences[index])
         {
             textbox.text += letter;
             yield return new WaitForSeconds(typingSpeed);
         }
-        continueButton.SetActive(true);
+        isTyping = false;
     }
 
     public void NextSentence()
     {
-        continueButton.SetActive(false);
+        isTyping = false;
 
         if (index < sentences.Length - 1)
         {
