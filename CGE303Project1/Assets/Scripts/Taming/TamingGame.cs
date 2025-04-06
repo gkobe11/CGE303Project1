@@ -16,6 +16,7 @@ public class TamingGame : MonoBehaviour
     public GameObject dinoTriggerZone; //set in inspector
 
     public TMP_Text textBox; //set in inspector
+    public TMP_Text bestiaryNotification; //set in inspector
 
     PlayerController playerController; // reference to playerController script
 
@@ -59,6 +60,9 @@ public class TamingGame : MonoBehaviour
 
 
             textBox.text = "You tamed the dino!";
+
+            StartCoroutine(ShowMessage("Bestiary Updated!", 2));
+
             playerController.PlayWinSound(); // plays win sound
 
             triggerZones = startTriggerZones;
@@ -93,4 +97,15 @@ public class TamingGame : MonoBehaviour
             tamingGame.SetActive(false);
         }
     }
+
+    
+    IEnumerator ShowMessage(string message, float delay)
+    {
+        bestiaryNotification.enabled = true;
+        bestiaryNotification.text = message;
+        yield return new WaitForSeconds(delay);
+        bestiaryNotification.text = "";
+        bestiaryNotification.enabled = false;
+    }
+    
 }
