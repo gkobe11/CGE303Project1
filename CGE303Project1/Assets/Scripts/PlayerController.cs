@@ -136,6 +136,6 @@ private IEnumerator ToggleBooleanAfterDelay()
 
     public void PlayLoseSound()
     {
-        playerAudio.PlayOneShot(loseSound, 1.0f);
+        playerAudio.PlayOneShot(loseSound, 2.0f);
     }
 }

@@ -20,6 +20,9 @@ public class TamingTriggerZoneManager : MonoBehaviour
     private TamingTriggerZone zone4;
     private TamingTriggerZone zone5;
 
+    PlayerController playerController; // reference to PlayerController script
+    // public TamingTriggerZone tamingTriggerZone; // reference to the TamingTriggerZone script
+
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +33,10 @@ public class TamingTriggerZoneManager : MonoBehaviour
         zone4 = z4.GetComponent<TamingTriggerZone>();
         zone5 = z5.GetComponent<TamingTriggerZone>();
         tamingScript = anchor.GetComponent<TamingGame>();
+
+        playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>(); // reference to PlayerController script
+        // tamingTriggerZone = playerController.GetComponent<TamingTriggerZone>();
+
     }
 
     // Update is called once per frame
@@ -44,7 +51,17 @@ public class TamingTriggerZoneManager : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.E))
         {
             tamingScript.strikes--;
+
+            /* if (tamingTriggerZone.hitTarget == false)
+            {
+                playerController.PlayMissSound(); // plays miss sound
+            } */
         }
+
+        /* if (targetZone != null && !targetZone.hitTarget)
+        {
+            playerController.PlayMissSound(); // plays miss sound
+        } */
 
         //reset game
         if (tamingScript.strikes <= 0)
@@ -56,6 +73,20 @@ public class TamingTriggerZoneManager : MonoBehaviour
             z5.SetActive(true);
         }
     }
+    
+    public void OnPlayerInput(bool wasSuccessful)
+    {
+        if (wasSuccessful)
+        {
+            playerController.PlayCollectSound(); // plays collect sound
+        }
+        else
+        {
+            // doesn't work properly
+            // playerController.PlayMissSound(); // plays miss sound
+        }
+    }
+
     /*
     private void CheckZones()
     {

@@ -565,6 +565,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isNearby: 0
   anchor: {fileID: 338780927}
+  hitTarget: 0
+  manager: {fileID: 0}
 --- !u!58 &48286332
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3841,6 +3843,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isNearby: 0
   anchor: {fileID: 957268937}
+  hitTarget: 0
+  manager: {fileID: 0}
 --- !u!58 &428148789
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6300,6 +6304,7 @@ MonoBehaviour:
   z3: {fileID: 428148785}
   z4: {fileID: 1512753560}
   z5: {fileID: 2015851937}
+  tamingTriggerZone: {fileID: 0}
 --- !u!1 &743635727
 GameObject:
   m_ObjectHideFlags: 0
@@ -6970,6 +6975,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isNearby: 0
   anchor: {fileID: 338780927}
+  hitTarget: 0
+  manager: {fileID: 0}
 --- !u!58 &773578350
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7416,6 +7423,7 @@ MonoBehaviour:
   z3: {fileID: 1861828829}
   z4: {fileID: 1494689331}
   z5: {fileID: 2075241962}
+  tamingTriggerZone: {fileID: 0}
 --- !u!1 &833978728
 GameObject:
   m_ObjectHideFlags: 0
@@ -11051,6 +11059,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isNearby: 0
   anchor: {fileID: 84000829}
+  hitTarget: 0
+  manager: {fileID: 734955525}
 --- !u!58 &1018355020
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -14275,6 +14285,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isNearby: 0
   anchor: {fileID: 338780927}
+  hitTarget: 0
+  manager: {fileID: 0}
 --- !u!58 &1343512532
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -14648,6 +14660,7 @@ MonoBehaviour:
   z3: {fileID: 1343512528}
   z4: {fileID: 1661361436}
   z5: {fileID: 773578346}
+  tamingTriggerZone: {fileID: 0}
 --- !u!1 &1422562744
 GameObject:
   m_ObjectHideFlags: 0
@@ -16470,6 +16483,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isNearby: 0
   anchor: {fileID: 84000829}
+  hitTarget: 0
+  manager: {fileID: 734955525}
 --- !u!58 &1494689335
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -16758,6 +16773,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isNearby: 0
   anchor: {fileID: 957268937}
+  hitTarget: 0
+  manager: {fileID: 0}
 --- !u!58 &1512753563
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -17844,6 +17861,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isNearby: 0
   anchor: {fileID: 957268937}
+  hitTarget: 0
+  manager: {fileID: 734955525}
 --- !u!50 &1633506776
 Rigidbody2D:
   serializedVersion: 4
@@ -18268,6 +18287,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isNearby: 0
   anchor: {fileID: 338780927}
+  hitTarget: 0
+  manager: {fileID: 0}
 --- !u!58 &1661361440
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -18729,6 +18750,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isNearby: 0
   anchor: {fileID: 84000829}
+  hitTarget: 0
+  manager: {fileID: 734955525}
 --- !u!58 &1697544616
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -19149,6 +19172,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isNearby: 0
   anchor: {fileID: 957268937}
+  hitTarget: 0
+  manager: {fileID: 0}
 --- !u!58 &1720028914
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -20392,6 +20417,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isNearby: 0
   anchor: {fileID: 84000829}
+  hitTarget: 0
+  manager: {fileID: 734955525}
 --- !u!58 &1861828833
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -22299,6 +22326,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isNearby: 0
   anchor: {fileID: 957268937}
+  hitTarget: 0
+  manager: {fileID: 0}
 --- !u!58 &2015851941
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -22631,6 +22660,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isNearby: 0
   anchor: {fileID: 338780927}
+  hitTarget: 0
+  manager: {fileID: 0}
 --- !u!58 &2032678096
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -26733,6 +26764,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isNearby: 0
   anchor: {fileID: 84000829}
+  hitTarget: 0
+  manager: {fileID: 734955525}
 --- !u!58 &2075241966
 CircleCollider2D:
   m_ObjectHideFlags: 0
